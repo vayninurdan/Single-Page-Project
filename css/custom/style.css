@@ -1,0 +1,225 @@
+/* Bootstrap Css */
+@import url("/css/bootstrap/bootstrap.min.css");
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Custom Css */
+  .navbar-custom {
+    background-color: #2C3D51;
+  }
+  
+  .container-custom a {
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  /* Body Container */
+  .section-main, .section-about {
+    background-color: rgb(120, 218, 171);
+  }
+  
+  .section-main .main-image {
+    width: 250px;
+    height: auto;
+  }
+  
+  .section-main .main-head,
+  .section-main .main-text, .section-about .about-head{
+    color: #ffffff;
+  }
+  
+  .section-main .main-icon,
+  .section-portfolio .portfolio-icon {
+    font-family: 'Bootstrap-icons';
+    font-size: 36px;
+    position: relative;
+    width: 300px;
+  }
+
+  .section-main .main-icon{
+    color: #ffffff;
+  }
+  
+  .main-icon::before,
+  .main-icon::after {
+    background-color: #ffffff;
+
+  }
+  
+  .main-icon::before,
+  .main-icon::after,
+  .portfolio-icon::before,
+  .portfolio-icon::after {
+    content: ""; /* This is required for pseudo-elements (::before and ::after) */
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 3px;
+    transform: translateY(-50%);
+  }
+  
+  .main-icon::before {
+    left: 0;
+  }
+  
+  .main-icon::after {
+    right: 0;
+  }
+
+  
+  /* PORTFOLIO CUSTOM STYLE */
+
+  .section-portfolio .portfolio-icon {
+    color: #000000;
+  }
+
+  .portfolio-icon::before,
+  .portfolio-icon::after {
+    background-color: #000000;
+  }
+    
+  .portfolio-icon::before {
+    left: 0;
+  }
+  
+  .portfolio-icon::after {
+    right: 0;
+  }
+
+  .section-portfolio {
+    background-color: #ffffff;
+    flex-direction: column;
+  }
+  
+  .section-portfolio .portfolio-head {
+    color: #000000;
+  }
+ 
+  .portfolio-gallery{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio-gallery .img-box {
+    border-radius: 8px;
+    padding: 20px 50px 20px 50px;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio-gallery .img-box img {
+    width: 100px;
+    height: auto;
+  }
+
+  @media only screen and (max-width: 1068px) {
+    .portfolio-gallery .container-gallery {
+      width: 100%;
+    }
+    .portfolio-gallery .gallery {
+      width: 100%;
+    }
+    .portfolio-gallery .container-gallery {
+      row-gap: 0px;
+      gap: 10px;
+    }
+    .portfolio-gallery .gallery {
+      gap: 10px;
+    }
+  }
+  
+  /* ABOUT CUSTOM STYLE */
+  
+  .section-about{
+    padding: 60px 0px 60px 0px;
+  }
+
+.section-about .about-button{
+  text-decoration: none;
+  border: 1px solid white;
+  background: none;
+  border-radius: 7px;
+  padding: 10px 6px 10px 6px;
+  color: #ffffff;
+}
+
+/* CONTACT */
+
+#contactForm{
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1068px) { 
+  #contactForm{
+    width: 60%;
+  }
+} 
+
+@media only screen and (max-width: 734px) { 
+  #contactForm{
+    width: 100%;
+  }
+} 
+
+#formGroupInput, #InputEmail, #phoneInput, #messageInput{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+}
+
+/* FOOTER */
+
+.footer{
+  background-color: #2C3D51;
+  padding: 60px 150px 60px 150px;
+}
+
+.footer .row .footerCol{
+  color: #ffffff;
+}
+
+.footer-social-media{
+  list-style-type: none;
+}
+
+.footer-social-media li{
+  border-radius: 100%;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #ffffff;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1068px) { 
+  .footer{
+    padding: 60px 50px 60px 50px;
+  }
+} 
+
+@media only screen and (max-width: 734px) { 
+  .footer{
+    padding: 40px 15px 40px 15px;
+  }
+} 
+
+/* COPYRIGHT */
+
+.copyright{
+  background-color: #1c2836;
+}
+
+.copyright span{
+  color: #ffffff;
+}
+
